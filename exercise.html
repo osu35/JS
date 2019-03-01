@@ -1,0 +1,20 @@
+<script>
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1,];
+//console.log(array);
+//console.log(array.length);
+let n = array.length;
+let a = Number.NEGATIVE_INFINITY; //Najwiekszy element
+let b = Number.POSITIVE_INFINITY; //Najmniejszt element
+let c = 0; //Suma elementow
+  for(var i = 0; i<n; i++){
+    if(array[i]>a){
+      a = array[i];
+    }else if(array[i]<b){
+      b = array[i];
+    }
+    c+=array[i];
+  }
+  console.log("Najwiekszy element wynosi ", a);
+  console.log("Najmniejszy element wynosi ", b);
+  console.log("Suma elementow wynosi ", c);
+</script>

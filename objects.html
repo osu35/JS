@@ -1,0 +1,21 @@
+<script>
+let ex = {
+  firstName : 'Mateusz',};
+  /*lastName : 'Osinski',
+  address: {
+    city : 'Lubon',
+    state : 'Poznan'
+  },
+  age : 30,
+  dogs : ['Milo', 'Tilo', 'Happy']
+};
+console.log(ex.dogs);
+//console.log(Object.keys(ex)); - wywolanie wszystkich elementow obiektu
+//console.log(Objtect.values(ex));
+//console.log(ex.hasOwnProperty('firstName')); cz istnieje dany element
+console.log(ex.hasOwnProperty('firstName2'));*/
+let ex1 = Object.assign({}, ex);
+ex1.lastname = "Stefan";
+console.log(ex1);
+console.log(ex);
+</script>
