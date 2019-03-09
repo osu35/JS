@@ -1,0 +1,18 @@
+<script>
+function address(city,state){
+  const newHouse = {city,state};
+
+  console.log(newHouse);
+}
+address('Lubon', 'Poznan');
+function myAdress(address){
+  const {city, state} = address;
+
+  const newAdress = {
+    city,
+    state
+  };
+  console.log(`${newAdress.city}, ${newAdress.state} `)
+}
+myAdress({city: 'Lubon', state: 'Poznan'});
+</script>
