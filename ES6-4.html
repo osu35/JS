@@ -1,0 +1,45 @@
+<script>
+  //Diffrent between let and var : let jest widoczna tylko w 'jednym' miejscu, jest stabilniejsza, bardziej popularna
+/*function hiPi(){
+  "use strict"; //tryb scisly, pozwala na wyeliminowanie wielu bledow i poprawe jakosci kodu, ale niesie ze soba pewne ograniczenia
+  const MATH = {
+    PI : 3.14
+  }
+Object.freeze(MATH); // bez tego, nie wypisze 3.14, tylko 99. "Zamraza" to const PI,przez co nie mozna jej zmienic.
+  try {
+    MATH.PI = 99;
+  } catch ( ex ) {
+    console.log(ex);
+  }
+  return MATH.PI;
+}
+const PI = hiPi();
+console.log(PI);
+const myArray = [1, 2, -0.4, 3, 3.1, -4, 0.6, 13, 0.1421, -0.321321, -3214.421412, 321, 4, 25, 100];
+  const funkcja = (arr) => { // funkcja strzalkowa
+    const int = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x*x) // funkcja w fukncji, szukania inta > 0, i wypisanie jego kwadratu
+    return int;
+  };
+  const int = funkcja(myArray);
+  console.log(int);
+
+  const sum = (function(){
+    return function sum(...arg){ // kropki, np. gdy nie znamy ilosci argumentow
+      return arg.reduce((a,b) => a+b, 0);
+    };
+  })();
+    console.log(sum(1,2,3));
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let array2;
+  (function() {
+    array2 = [...array];
+    array[0] = '10';
+  })();
+  console.log(array2);
+  console.log(array);*/
+  var bober = {x : 3.6, y : 4.2, z : 7.2};
+  const {x : a, y : b, z : c} = bober;
+  console.log(`${a}   ${b}    ${c}`);
+
+
+</script>
